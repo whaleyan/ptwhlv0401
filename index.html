@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>平坦文化旅游大数据平台</title>
+    <link rel="stylesheet"  type="text/css" media="screen" href="./css/normalize.css" />
+    <link rel="stylesheet"  type="text/css" href="./css/common.css" />
+    <style type="text/css">
+    #img1{
+          left: -200px;
+          top: -100px;
+          position: absolute;
+          z-index: -1;   
+    }
+    #img2{
+          left: -200px;
+          top: -190px;
+          position: absolute;
+          z-index: 1;
+    }
+    #img3{
+          left: -200px;
+          top: -190px;
+          position: absolute;
+          z-index: 1;
+    }
+    </style>
+    <!--script-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins/echarts.min.js"></script>
+</head>
+<body>
+    <canvas id="space" width="100%"></canvas>
+    <img id="img1" src="img/bg.png" width="100" height="100"/></img>
+    <img id="img2" src="img/red.png" width="100" height="100"></img>
+    <img id="img3" src="img/yel.png" width="100" height="100"></img>
+    <div class="wrap">
+        <!--标题-->
+        <div class="title">
+            <div id="time" class="time"></div>
+        </div>
+
+        <div class="head box-shadow margin-top-10">
+            <div class="head-block">
+                <p class="h-flex-center"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="y-color num-large">&nbsp;5920</span></p>
+                <p class="h-mid h-flex-center"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="green-color num-large">&nbsp;&nbsp;5920.25</span></p>
+                <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+            </div>
+            <div class="head-block">
+                <p class="h-flex-center"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="y-color num-large">&nbsp;&nbsp;5920</span></p>
+                <p class="h-mid"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="green-color num-large">&nbsp;&nbsp;5920.25</span></p>
+                <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+            </div>
+            <div class="head-block">
+                <p class="h-flex-center"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="y-color num-large">&nbsp;&nbsp;5920</span></p>
+                <p class="h-mid h-flex-center"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="green-color num-large">&nbsp;&nbsp;5920.25</span></p>
+                <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+            </div>
+            <div class="head-block">
+                <p class="h-flex-center"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="y-color num-large">&nbsp;&nbsp;5920</span></p>
+                <p class="h-mid h-flex-center"><span class="head-text">日客流量&nbsp;&nbsp;(人)</span><span class="green-color num-large">&nbsp;&nbsp;5920.25</span></p>
+                <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-block">
+                <div class="left-echart box-shadow margin-top-10">
+                    <div class="echart">
+                        <div  id="PictorialBar1" style="width: 100%;height: 350px;"></div>
+                    </div>
+                </div>
+                <div class="left-echart box-shadow margin-top-10">
+                    <div class="echart" id="Bar1" style="width: 100%;height: 75%;">
+                        <!--<div class="rotation_pie">-->
+
+                            <!--<div class="l_rotation_circle poa"></div>-->
+                            <!--<div class="r_rotation_circle poa"></div>-->
+                            <!--<img src="img/dashboard/scale.png" class="l_scale"></img>-->
+                            <!--<img src="img/dashboard/scale.png" class="r_scale"></img>-->
+                            <!--<img src="img/dashboard/l_pie.png" class="l"></img>-->
+                            <!--<img src="img/dashboard/r_pie.png" class="r"></img>-->
+
+                            <!--<div class="c-text2">-->
+                                <!--<p>其他</p>-->
+                            <!--</div>-->
+                            <!--<div class="c-text1">-->
+                                <!--<p>台资</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="center-block">
+                <!--<div class="echart"></div>-->
+                <div class="left-echart box-shadow margin-top-10">
+                    <div class="echart">
+                        <div id="main2" style="width: 95%;height:350px;"></div>
+                        <!--<div id="main" style="display: none; width: 95%;height:350px;"></div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="left-echart box-shadow margin-top-10">
+                    <div class="echart " id="PictorialBar2" style="width: 100%;height: 75%;"></div>
+                </div>
+                <div class="left-echart box-shadow margin-top-10">
+                    <div class="echart" id="Bar2" style="width: 100%;height: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--script-->
+<script src="js/bg.js"></script>
+<script src="js/map.js"></script>
+<script src="js/line.js"></script>
+<script src="js/public-time.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

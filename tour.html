@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>平坦文化旅游大数据平台</title>
+<link rel="stylesheet"  type="text/css" media="screen" href="./css/normalize.css" />
+<link rel="stylesheet"  type="text/css" href="./css/common.css" />
+<!--script-->
+<script src="js/jquery.min.js"></script>
+<script src="js/plugins/echarts.min.js"></script>
+</head>
+<body>
+<!--旅游-->
+<canvas id="space" width="100%"></canvas>
+<div class="wrap">
+    <!--标题-->
+    <div class="title">
+        <div id="time" class="time"></div>
+    </div>
+
+    <div class="head box-shadow margin-top-10">
+        <div class="head-block">
+            <p class="h-flex-center"><span class="head-text">日消费额&nbsp;&nbsp;(元)</span><span class="y-color num-large">&nbsp;5920</span></p>
+            <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+        </div>
+        <div class="head-block">
+            <p class="h-flex-center"><span class="head-text">周消费额&nbsp;&nbsp;(元)</span><span class="y-color num-large">&nbsp;&nbsp;5920</span></p>
+            <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+        </div>
+        <div class="head-block">
+            <p class="h-flex-center"><span class="head-text">月消费额&nbsp;&nbsp;(元)</span><span class="y-color num-large">&nbsp;&nbsp;5920</span></p>
+            <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+        </div>
+        <div class="head-block">
+            <p class="h-flex-center"><span class="head-text">景区景点&nbsp;&nbsp;(家)</span><span class="y-color num-large">&nbsp;&nbsp;5920</span></p>
+            <p class="h-bottom"><span class="gray-color num-small">2019.03.05</span></p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-block">
+            <div class="left-echart box-shadow margin-top-10">
+                <div class="echart">
+
+                </div>
+            </div>
+            <div class="left-echart box-shadow margin-top-10">
+                <div class="echart">
+                    <div id="main2" style="width: 95%;height:350px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="center-block">
+            <!--<div class="echart"></div>-->
+            <div class="left-echart box-shadow margin-top-10">
+                <div class="echart"></div>
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="left-echart box-shadow margin-top-10">
+                <div class="echart"></div>
+            </div>
+            <div class="left-echart box-shadow margin-top-10">
+                <div class="echart">
+                    <div id="main" style="width: 95%;height:350px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--script-->
+<script src="js/bg.js"></script>
+<script src="js/line.js"></script>
+<script src="js/public-time.js"></script>
+</body>
+</html>

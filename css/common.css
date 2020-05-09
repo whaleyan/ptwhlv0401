@@ -1,0 +1,234 @@
+body{
+    background-color: #000f21;
+    font-size: 14px;
+    color:#fff
+}
+body,p,h1,h2{
+    margin: 0;
+}
+.title{
+    font-size: 1rem;
+    color: #28fff3;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+    background-image: url(../img/dashboard/title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+h1{
+    width: 100%;
+}
+.wrap{
+    background-color:rgba(0,0,0,.1);
+    padding:0rem 1rem;
+    color:#fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+}
+.time{
+    color:#fff;
+    text-align: right;
+    width: 220px;
+    position: absolute;
+    right: 1rem;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-block{
+    width: 100%;
+    padding-left: 2.5rem;
+    position: relative;
+}
+.head-block:nth-child(1):after,.head-block:nth-child(2):after,.head-block:nth-child(3):after{
+    display: block;
+    content:  url("../img/dashboard/h-line.png");
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*background: url("../img/dashboard/h-line.png") no-repeat;*/
+    background-size:40px;
+    width:40px;
+    height:40px;
+}
+.box-shadow{
+    padding: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 1px 50px #0f94a0 inset;
+    background-color: rgba(2, 2, 2, 0.2);
+}
+.h-flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.h-mid{
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.h-bottom{
+    margin-top: 0.2rem;
+}
+.y-color{
+    color:#ffca00;
+}
+.green-color{
+    color:#00ffa8
+}
+.gray-color{
+    color:#989898
+}
+.num-large{
+    font-size:1.5rem;
+}
+/*
+*
+*content
+*
+***/
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.margin-top-10{
+    margin-top: 1rem;
+}
+.left-block,.center-block,.right-block{
+    width: 28%;
+    text-align: center;
+}
+.echart{
+    min-height: 370px;
+}
+.center-block{
+    display: flex;
+    width: 42%;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+/***
+    左下动画
+***
+****
+ */
+.poa {
+    position: absolute;
+}
+.rotation_pie {
+    /*width: 560px;*/
+    /*height: 394px;*/
+    /*background: url(../img/m_circle.png) no-repeat center;*/
+    position: relative;
+}
+.rotation_pie h2{
+    font-size: 20px;
+    text-align: center;
+}
+.rotation_pie h3{
+    font-size: 15px;
+    text-align: center;
+}
+.rotation_pie .m_circle{
+    width: 560px;
+    height: 394px;
+    background: url(../img/dashboard/m_circle.png) no-repeat center;
+}
+.rotation_pie .l_rotation_circle,
+.rotation_pie .r_rotation_circle{
+    /*width: 218px;*/
+    /*height: 218px;*/
+    width: 180px;
+    height: 180px;
+    background: url(../img/dashboard/circle.png) no-repeat center;
+    webkit-animation: circle 20s linear infinite;
+    -o-animation: circle 20s linear infinite;
+    -ms-animation: circle 20s linear infinite;
+    -moz-animation: circle 20s linear infinite;
+    animation: circle 20s linear infinite;
+    background-size: 180px;
+}
+.rotation_pie .l_rotation_circle{
+    /*left: 52px;*/
+    /*top: 106px;    */
+    left: 40px;
+    top: 95px;
+}
+.rotation_pie .r_rotation_circle{
+    /*left: 291px;*/
+    /*top: 106px;*/
+    left: 274px;
+    top: 95px;
+}
+.rotation_pie .l_scale,.rotation_pie .r_scale{
+    position: absolute;
+    width: 110px;
+    top: 130px;
+}
+.rotation_pie .l_scale{
+    left: 74px;
+}
+.rotation_pie .r_scale{
+    left: 309px;
+}
+.rotation_pie .l{
+    position: absolute;
+    /*left: 85px;*/
+    /*top: 136px;*/
+    left: 79px;
+    top: 134px;
+    width: 100px;
+}
+.rotation_pie .r{
+    position: absolute;
+    /*left: 327px;*/
+    /*top: 209px;*/
+    left: 310px;
+    top: 174px;
+    width: 66px;
+}
+.rotation_pie .c-text1,
+.rotation_pie .c-text2{
+    width: 50px;
+    height: 15px;
+    color: #fff;
+}
+.rotation_pie .c-text1{
+    position: absolute;
+    /*left: 387px;*/
+    /*top: 184px*/
+    left: 350px;
+    top: 162px;
+}
+.rotation_pie .c-text2{
+    position: absolute;
+    /*left: 144px;*/
+    /*top: 184px*/
+    left: 103px;
+    top: 169px;
+}
+
+@-webkit-keyframes circle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
